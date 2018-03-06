@@ -1,0 +1,31 @@
+while True:
+
+    import random
+    responses = ["Rock", "Paper", "Scissors"]
+
+    user = input ("Let's play Rock, Paper, Scissors! Type your pick: ")
+
+    comp = (random.choice (responses))
+    print (comp)
+    if user == ("Rock"):
+        if comp == ("Rock"):
+            print("It's a tie")
+        if comp == ("Paper"):
+            print ("You lose")
+        if comp == ("Scissors"):
+            print ("You win")
+    if user == ("Paper"):
+        if comp == ("Paper"):
+            print ("It's a tie")
+        if comp == ("Scissors"):
+            print ("You lose")
+        if comp == ("Rock"):
+            print ("You win")
+    if user == ("Scissors"):
+        if comp == ("Scissors"):
+            print ("It's a tie")
+        if comp == ("Rock"):
+            print ("You lose")
+        if comp == ("Paper"):
+            print ("You win")
+
